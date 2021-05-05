@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var sentence:String = "Hello StockVis"
+    
     var body: some View {
-        Text("Hello StockVis")
-            .padding()
+        VStack {
+            Text(sentence)
+                .padding()
+            Button(action: {sentence = "バーカ"}) {
+                Text("push")
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.blue)
+            }
+            
+            test()
+        }
+        
     }
 }
 

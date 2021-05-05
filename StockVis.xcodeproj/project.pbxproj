@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E7422F640A2ABAF3EDC01B2 /* Pods_StockVis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACBFAB7DE88149C2884CA52 /* Pods_StockVis.framework */; };
 		8C266744264256C6005B9EDD /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C266743264256C6005B9EDD /* test.swift */; };
+		8C266747264259A3005B9EDD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8C266746264259A3005B9EDD /* GoogleService-Info.plist */; };
 		EB219EE02632FF4B0056EECE /* StockVisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB219EDF2632FF4B0056EECE /* StockVisApp.swift */; };
 		EB219EE22632FF4B0056EECE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB219EE12632FF4B0056EECE /* ContentView.swift */; };
 		EB219EE42632FF4C0056EECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB219EE32632FF4C0056EECE /* Assets.xcassets */; };
@@ -16,6 +18,10 @@
 
 /* Begin PBXFileReference section */
 		8C266743264256C6005B9EDD /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		8C266746264259A3005B9EDD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		933530A616AC9023F5239DA2 /* Pods-StockVis.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockVis.release.xcconfig"; path = "Target Support Files/Pods-StockVis/Pods-StockVis.release.xcconfig"; sourceTree = "<group>"; };
+		9DD736FFE5735A1BE172123B /* Pods-StockVis.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockVis.debug.xcconfig"; path = "Target Support Files/Pods-StockVis/Pods-StockVis.debug.xcconfig"; sourceTree = "<group>"; };
+		BACBFAB7DE88149C2884CA52 /* Pods_StockVis.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockVis.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB219EDC2632FF4B0056EECE /* StockVis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockVis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB219EDF2632FF4B0056EECE /* StockVisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockVisApp.swift; sourceTree = "<group>"; };
 		EB219EE12632FF4B0056EECE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E7422F640A2ABAF3EDC01B2 /* Pods_StockVis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AC2048439976E081E62B94A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BACBFAB7DE88149C2884CA52 /* Pods_StockVis.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C3149B095F3AAF0785AA9C97 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DD736FFE5735A1BE172123B /* Pods-StockVis.debug.xcconfig */,
+				933530A616AC9023F5239DA2 /* Pods-StockVis.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EB219ED32632FF4B0056EECE = {
 			isa = PBXGroup;
 			children = (
 				EB219EDE2632FF4B0056EECE /* StockVis */,
 				EB219EDD2632FF4B0056EECE /* Products */,
+				C3149B095F3AAF0785AA9C97 /* Pods */,
+				3AC2048439976E081E62B94A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +86,7 @@
 				8C266743264256C6005B9EDD /* test.swift */,
 				EB219EE32632FF4C0056EECE /* Assets.xcassets */,
 				EB219EE82632FF4C0056EECE /* Info.plist */,
+				8C266746264259A3005B9EDD /* GoogleService-Info.plist */,
 				EB219EE52632FF4C0056EECE /* Preview Content */,
 			);
 			path = StockVis;
@@ -79,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB219EEB2632FF4C0056EECE /* Build configuration list for PBXNativeTarget "StockVis" */;
 			buildPhases = (
+				595034202A2130F7D9F0324F /* [CP] Check Pods Manifest.lock */,
 				EB219ED82632FF4B0056EECE /* Sources */,
 				EB219ED92632FF4B0056EECE /* Frameworks */,
 				EB219EDA2632FF4B0056EECE /* Resources */,
+				DC013512264EE116D28E96E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,10 +161,53 @@
 			files = (
 				EB219EE72632FF4C0056EECE /* Preview Assets.xcassets in Resources */,
 				EB219EE42632FF4C0056EECE /* Assets.xcassets in Resources */,
+				8C266747264259A3005B9EDD /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		595034202A2130F7D9F0324F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockVis-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC013512264EE116D28E96E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockVis/Pods-StockVis-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockVis/Pods-StockVis-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockVis/Pods-StockVis-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB219ED82632FF4B0056EECE /* Sources */ = {
@@ -268,6 +341,7 @@
 		};
 		EB219EEC2632FF4C0056EECE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DD736FFE5735A1BE172123B /* Pods-StockVis.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -289,6 +363,7 @@
 		};
 		EB219EED2632FF4C0056EECE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 933530A616AC9023F5239DA2 /* Pods-StockVis.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

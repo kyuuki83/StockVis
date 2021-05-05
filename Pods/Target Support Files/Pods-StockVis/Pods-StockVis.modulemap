@@ -1,0 +1,6 @@
+framework module Pods_StockVis {
+  umbrella header "Pods-StockVis-umbrella.h"
+
+  export *
+  module * { export * }
+}

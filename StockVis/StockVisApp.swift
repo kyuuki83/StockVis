@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct StockVisApp: App {
@@ -14,4 +15,12 @@ struct StockVisApp: App {
             ContentView()
         }
     }
+    
+    class AppDelegate: UIResponder, UIApplicationDelegate {
+            func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+                FirebaseApp.configure()
+                
+                return true
+            }
+        }
 }
